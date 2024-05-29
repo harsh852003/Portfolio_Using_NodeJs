@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 import { ImGithub } from "react-icons/im";
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from 'next/link';
-import ConfettiButton from './confetti';
-import Confetti from 'react-confetti';
+
 
 
 
@@ -52,19 +51,10 @@ function EmailSection() {
   } 
   return (
    <>
-      {Submit && (
-      <Confetti
-        width={window.innerWidth }
-        height={window.innerHeight  }
-        gravity={0.1}
-        
-      />
-    )}
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 ' id='email'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24' id='email'>
      
       <div>
       <h5 className=' text-2xl font-bold text-orange-600'>Let's Meet</h5>
-
       <p className=' text-gray-700 text-lg mb-4 max-w-md dark:text-orange-50'>
         {" "}
         Namaste, I am currently learning new things in web development.I am looking for new opportunities, my inbox is always full wheater you have a question or just want to say Hii
