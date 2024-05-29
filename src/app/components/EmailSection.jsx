@@ -21,11 +21,9 @@ function EmailSection() {
 
     const options = {
       method: "POST",
-      // to telling the server that we are sending json 
       headers: {
         "Content-Type": "application/json",
       },
-      // body of the request is th json
       body: JSONdata,
     };
 
@@ -50,7 +48,7 @@ function EmailSection() {
         <div>
           <h5 className='text-2xl font-bold text-orange-600'>Let&apos;s Meet</h5>
           <p className='text-gray-700 text-lg mb-4 max-w-md dark:text-orange-50'>
-            {" "}Namaste, I am currently learning new things in web development. I am looking for new opportunities, my inbox is always full whether you have a question or just want to say Hi.
+            Namaste, I am currently learning new things in web development. I am looking for new opportunities, my inbox is always open whether you have a question or just want to say Hi.
           </p>
 
           <div className='flex flex-row gap-2'>
