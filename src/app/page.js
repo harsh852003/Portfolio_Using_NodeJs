@@ -13,7 +13,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import ContactMe from "./components/ContactMe";
 
-const darkMode=window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+// const darkMode=window && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
 export default function Home() {
   
   const [navbarOpen, setnavbarOpen] = useState(false);
@@ -44,9 +44,9 @@ export default function Home() {
   
   return (
 
-    
+    //<div className={`${darkMode}`} >
     <div className="bg-orange-50">
-    <div className={`${darkMode}`} >
+    <div >
       <title >Harsh Portfolio</title>
       <main className=' bg-orange-50 px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className=" min-h-screen">
