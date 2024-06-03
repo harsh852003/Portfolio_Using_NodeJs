@@ -3,7 +3,7 @@
 import { IoInvertModeOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 import { VscClose } from "react-icons/vsc";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavLink from "./components/NavLink";
 import MenuOverlay from "./components/MenuOverlay";
 import AboutMe from "./components/AboutMe";
@@ -14,9 +14,18 @@ import Footer from "./components/Footer";
 import ContactMe from "./components/ContactMe";
 
 // const darkMode=window && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+
 export default function Home() {
   
   const [navbarOpen, setnavbarOpen] = useState(false);
+  const [theme, setTheme] = useState('light'); // Default theme
+    useEffect(() => {
+      if (typeof window !== 'undefined' && window.matchMedia) {
+        const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+        setTheme(darkMode);
+      }
+    }, []);   
+
 
   //navlink array
   const navlink = [{
@@ -46,7 +55,7 @@ export default function Home() {
 
     //<div className={`${darkMode}`} >
     <div className="bg-orange-50">
-    <div >
+    <div className={theme} >
       <title >Harsh Portfolio</title>
       <main className=' bg-orange-50 px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className=" min-h-screen">
