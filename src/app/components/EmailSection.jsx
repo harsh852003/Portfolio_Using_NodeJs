@@ -46,7 +46,7 @@ function EmailSection() {
     <>
       <section className='grid md:grid-cols-2 my-12 md:my-12 py-24' id='email'>
         <div>
-          <h5 className='text-2xl font-bold text-orange-600'>Lets Meet</h5>
+          <h5 className='text-2xl font-bold text-orange-600'>Lets Meet Krutik</h5>
           <p className='text-gray-700 text-lg mb-4 max-w-md dark:text-orange-50'>
             Namaste, I am currently learning new things in web development. I am looking for new opportunities, my inbox is always open whether you have a question or just want to say Hi.
           </p>
