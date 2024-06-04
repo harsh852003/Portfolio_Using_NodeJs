@@ -10,12 +10,13 @@ const TAB_DTA = [
         id: "Skills",
         content: (
             <ul className=' list-disc pl-2 dark:text-orange-50'>
-                <li>Node js</li>
-                <li>Express js</li>
-                <li>My sql</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>React</li>
+                <li>DSA - C++</li>
+                <li>WEb - JavaScript</li>
+                <li>CSS - Tailwind CSS , Bootstrap</li>
+                <li>Frontend - ReactJS</li>
+                <li>Backend - NodeJS , ExpressJS</li>
+                <li>Database - MongoDb,Supabase,FireBase</li>
+                <li>Designing - Figma(basic knowledge), Canva(poster design)</li>
             </ul>
         ),
 
@@ -25,8 +26,9 @@ const TAB_DTA = [
         id: "Education",
         content: (
             <ul className=' list-disc pl-2 dark:text-orange-50'>
-                <li>12th - P V Modi High School</li>
-                <li>College - VGEC Chandkheda Under Gujarat Technological University</li>
+                <li>10th- Atmiya School, Rajkot</li>
+                <li>12th - P V Modi High School, Rajkot</li>
+                <li>College - VGEC Chandkheda Under Gujarat Technological University, Ahemedabad</li>
                 
             </ul>
         ),
@@ -36,6 +38,7 @@ const TAB_DTA = [
         id: " Achievements",
         content: (
             <ul className=' list-disc pl-2 dark:text-orange-50'>
+                <li>80+ DSA question solved in <a href='https://leetcode.com/u/Harsh_1015/' className=' text-orange-700 font-extrabold'>Leetcode</a> </li>
                 <li>VGEC NCC Social Media Team Leader</li>
                 <li>Gymnastic</li>
                 <li>B certificate in NCC</li>
@@ -71,7 +74,7 @@ function AboutMe() {
             <div className='flex flex-row mt-8'>
                 <TabButton selectTab={()=> handletabChange("Skills")} active={Tab === "Skills"} >
                     {""} 
-                    Skills {" "}
+                    Skills & Tools {" "}
                 </TabButton>
                 
                 <TabButton selectTab={()=> handletabChange("Education")} active={Tab === "Education"} >

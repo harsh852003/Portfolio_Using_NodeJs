@@ -36,6 +36,10 @@ export default function Home() {
     }
   ];
 
+  const openResume=()=>{
+    window.open('/Harsh.pdf','_blank')
+  }
+
   return (
     <div className={`bg-orange-50 ${theme}`}>
       <title>Harsh Portfolio</title>
@@ -64,7 +68,7 @@ export default function Home() {
                   </li>
                 ))}
                 <li>
-                  <a className="bg-gradient-to-r from-orange-500 to-orange-200 text text-wh px-2 py-2 rounded-md ml-10" href="#">Resume</a>
+                  <button onClick={openResume} className="bg-gradient-to-r from-orange-500 to-orange-200 text text-wh px-2 py-2 rounded-md ml-10">Resume</button>
                 </li>
               </ul>
             </div>
