@@ -37,7 +37,7 @@ export default function Home() {
   ];
 
   const openResume=()=>{
-    window.open('/Harsh.pdf','_blank')
+    window.open('/Hp.pdf','_blank')
   }
 
   return (

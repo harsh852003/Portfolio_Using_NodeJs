@@ -38,7 +38,7 @@ const TAB_DTA = [
         id: " Achievements",
         content: (
             <ul className=' list-disc pl-2 dark:text-orange-50'>
-                <li>80+ DSA question solved in <a href='https://leetcode.com/u/Harsh_1015/' className=' text-orange-700 font-extrabold'>Leetcode</a> </li>
+                <li>110+ DSA question solved in <a href='https://leetcode.com/u/Harsh_1015/' className=' text-orange-700 font-extrabold'>Leetcode</a> </li>
                 <li>VGEC NCC Social Media Team Leader</li>
                 <li>Gymnastic</li>
                 <li>B certificate in NCC</li>
